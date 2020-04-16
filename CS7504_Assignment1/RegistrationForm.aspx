@@ -32,6 +32,8 @@
         .standardRight {
             font-family: Monospace;
             font-size: large;
+            color: #1aff81;
+            font-weight: bold; 
             text-align: left;
             width: 685px;
             height: 30px;
@@ -51,7 +53,7 @@
             text-align: center;
             font-weight: bold; 
             width: 10000px;
-            height: 30px;
+            height: 80px;
         }
         .fullRow1 {
             font-family: Monospace;
@@ -92,10 +94,17 @@
             background-image:url('Images/background1.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: center top;
-            background-size: 100%;
+            background-position: center;
+            background-size: 100% 100%;
         }
-
+        .auto-style4 {
+            font-family: Monospace;
+            font-size: large;
+            color: #1aff81;
+            font-weight: bold;
+            text-align: center;
+            height: 35px;
+        }
     </style>
 </head>
 <body class="backgroundStyle">
@@ -120,7 +129,7 @@
                         <asp:Label ID="lblFname" runat="server" Text="First Name"></asp:Label>
                         &nbsp;&nbsp;&nbsp;</td>
                     <td class="standardRight">
-                        <asp:TextBox ID="txtFname" runat="server" class="textBox" BackColor="#073605"></asp:TextBox>
+                        <asp:TextBox ID="txtFname" runat="server" class="textBox" BackColor="#073605" MaxLength="40"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -128,7 +137,7 @@
                         <asp:Label ID="lblLname" runat="server" Text="Last Name"></asp:Label>
                         &nbsp;&nbsp;&nbsp;</td>
                     <td class="standardRight">
-                        <asp:TextBox ID="txtLname" runat="server" Class="textBox" BackColor="#073605"></asp:TextBox>
+                        <asp:TextBox ID="txtLname" runat="server" Class="textBox" BackColor="#073605" MaxLength="40"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -136,7 +145,7 @@
                         <asp:Label ID="lblDob" runat="server" Text="D.O.B"></asp:Label>
                         &nbsp;&nbsp;&nbsp;</td>
                     <td class="standardRight">
-                        <asp:TextBox ID="txtDob" runat="server" Class="textBox" BackColor="#073605"></asp:TextBox>
+                        <asp:TextBox ID="txtDob" runat="server" Class="textBox" BackColor="#073605" MaxLength="10"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -144,7 +153,7 @@
                         <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
                         &nbsp;&nbsp;&nbsp;</td>
                     <td class="standardRight">
-                        <asp:TextBox ID="txtAddress" runat="server" CssClass="textBox" BackColor="#073605"></asp:TextBox>
+                        <asp:TextBox ID="txtAddress" runat="server" CssClass="textBox" BackColor="#073605" MaxLength="80"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -152,21 +161,23 @@
                         <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
                         &nbsp;&nbsp;&nbsp;</td>
                     <td class="standardRight">
-                        <asp:TextBox ID="txtCity" runat="server" Class="textBox" BackColor="#073605"></asp:TextBox>
+                        <asp:TextBox ID="txtCity" runat="server" Class="textBox" BackColor="#073605" MaxLength="40"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="fullRow" colspan="2"></td>
+                    <td class="fullRow" colspan="2">
+                        <asp:Label ID="lblAllFields" runat="server" Text="*All fields must filled in... " ForeColor="#990000"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="buttonStyle" colspan="2">
-                        <asp:Button ID="btnSave" runat="server" Text="Save" class="buttons" BackColor="#073605" /> 
+                        <asp:Button ID="btnSave" runat="server" Text="Save" class="buttons" BackColor="#073605" OnClick="btnSave_Click" /> 
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" class="buttons" BackColor="#073605" />
+                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" class="buttons" BackColor="#073605" OnClick="btnCancel_Click" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="fullRow" colspan="2"></td>
+                    <td class="fullRow1" colspan="2"></td>
                 </tr>
                 <tr>
                     <td class="fullRow" colspan="2">
@@ -174,22 +185,22 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="standardLeft">
+                    <td class="auto-style4" colspan="2">
                         <asp:Label ID="lblConDob" runat="server" Text="D.O.B:"></asp:Label>&nbsp;&nbsp;
+                        <asp:Label ID="lblSavedDob" runat="server" Text="Label"></asp:Label>
                         </td>
-                    <td class="standardRight"></td>
                 </tr>
                 <tr>
-                    <td class="standardLeft">
+                    <td class="auto-style4" colspan="2">
                         <asp:Label ID="lblConAddress" runat="server" Text="Address:"></asp:Label>&nbsp;&nbsp;
+                        <asp:Label ID="lblSavedAddress" runat="server" Text="Label"></asp:Label>
                         </td>
-                    <td class="standardRight">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="standardLeft">
-                        <asp:Label ID="lblCity0" runat="server" Text="City:"></asp:Label>&nbsp;&nbsp;
+                    <td class="auto-style4" colspan="2">
+                        <asp:Label ID="lblConCity" runat="server" Text="City:"></asp:Label>&nbsp;&nbsp;
+                        <asp:Label ID="lblSavedCity" runat="server" Text="Label"></asp:Label>
                         </td>
-                    <td class="standardRight">&nbsp;</td>
                 </tr>
             </table>
         </form>
