@@ -112,6 +112,15 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
+        /// lblAllFields control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAllFields;
+        
+        /// <summary>
         /// btnSave control.
         /// </summary>
         /// <remarks>
@@ -148,6 +157,15 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.Label lblConDob;
         
         /// <summary>
+        /// lblSavedDob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSavedDob;
+        
+        /// <summary>
         /// lblConAddress control.
         /// </summary>
         /// <remarks>
@@ -157,12 +175,30 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.Label lblConAddress;
         
         /// <summary>
-        /// lblCity0 control.
+        /// lblSavedAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCity0;
+        protected global::System.Web.UI.WebControls.Label lblSavedAddress;
+        
+        /// <summary>
+        /// lblConCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConCity;
+        
+        /// <summary>
+        /// lblSavedCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSavedCity;
     }
 }

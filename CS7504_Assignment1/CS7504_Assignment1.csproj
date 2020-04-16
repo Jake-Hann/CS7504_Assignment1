@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\StaffDatabase.mdf" />
+    <Content Include="App_Data\StaffDatabase_log.ldf">
+      <DependentUpon>StaffDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Images\background1.jpg" />
     <Content Include="Images\RobCo_MDBP.png" />
@@ -96,7 +100,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
