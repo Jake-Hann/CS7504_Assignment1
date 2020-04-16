@@ -31,6 +31,15 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.Label lblFname;
         
         /// <summary>
+        /// txtFname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFname;
+        
+        /// <summary>
         /// lblLname control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace CS7504_Assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLname;
+        
+        /// <summary>
+        /// txtLname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLname;
         
         /// <summary>
         /// lblDob control.
@@ -49,6 +67,15 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.Label lblDob;
         
         /// <summary>
+        /// txtDob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDob;
+        
+        /// <summary>
         /// lblAddress control.
         /// </summary>
         /// <remarks>
@@ -58,6 +85,15 @@ namespace CS7504_Assignment1 {
         protected global::System.Web.UI.WebControls.Label lblAddress;
         
         /// <summary>
+        /// txtAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAddress;
+        
+        /// <summary>
         /// lblCity control.
         /// </summary>
         /// <remarks>
@@ -65,6 +101,15 @@ namespace CS7504_Assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCity;
+        
+        /// <summary>
+        /// txtCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
         /// lblConformation control.
